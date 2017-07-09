@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyWebSite</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="logo">
+		
+	</div>
+	<div class="wrap">
+		<div class ="bg-slider">
+			<ul id="slides">
+			    <li class="slide showing">Макет веб-сайта</li>
+			    <li class="slide">Верстка сайта</li>
+			    <li class="slide">Программирование сайта</li>
+			    <li class="slide">Наполнение сайта</li>
+			    <li class="slide">Расположение сайта Интернет</li>
+			</ul>
+		</div>
+	</div>
+		<div class="wrap">
+			<header>
+				<nav>
+					<ul>
+			            <li><a href="index.html">Главная</a></li>
+			            <li><a href="portfolio.html">Портфолио</a></li>
+			            <li><a href="contact.html">Контакты</a></li>
+			        </ul>
+				</nav>
+			</header>
+			<div class="content">
+				<h1 class="big">Добро пожаловать</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et ab accusantium neque quidem quasi nisi dignissimos laborum voluptatibus tenetur, natus, officia at dicta cum corporis dolorum ut doloremque eius, praesentium eveniet pariatur modi saepe. Beatae placeat possimus deserunt fugiat itaque distinctio natus dolorum adipisci, voluptates sunt consequuntur, harum totam maxime animi repellat facere provident ullam excepturi accusantium? Laudantium eum reiciendis aliquid iure architecto animi quibusdam, totam beatae voluptate maxime quas quia sapiente aut aspernatur? Modi cum, quasi commodi tempore ipsam ipsa voluptatum, sequi animi nostrum doloribus quod et ratione facilis eius iure praesentium dolore corrupti mollitia cumque quisquam perferendis deleniti dolor inventore molestias natus? Necessitatibus eos itaque cum, cumque tempore aperiam illum, explicabo in labore laborum non culpa. Cupiditate.</p>
+			</div>
+		</div>
+		<div class="wrap">
+			<footer> 
+				<div id="social">
+					<a href="#"><img src="img/fb.png" alt="facebook"></a>
+					<a href="#"><img src="img/google-plus.png" alt="facebook"></a>
+					<a href="#"><img src="img/linkedin.png" alt="facebook"></a>
+					<a href="#"><img src="img/instagram.png" 
+					alt="facebook"></a>
+					<a href="#"><img src="img/twitter.png" alt="facebook"></a>
+					<a  href="#"><img class="last-img" src="img/vk.png" alt="facebook"></a>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+	</script>
+</body>
+</html>

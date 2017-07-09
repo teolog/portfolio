@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+</head>
+<body>
+	<div class="logo">
+		
+	</div>
+		<ul id="slides">
+		    <li class="slide showing">Макет веб-сайта</li>
+		    <li class="slide">Верстка сайта</li>
+		    <li class="slide">Программирование сайта</li>
+		    <li class="slide">Наполнение сайта</li>
+		    <li class="slide">Расположение сайта Интернет</li>
+		</ul>
+		<div class="wrap">
+			<header>
+				<nav>
+					<ul>
+			            <li><a href="index.html">Главная</a></li>
+			            <li><a href="portfolio.html">Портфолио</a></li>
+			            <li><a href="contact.html">Контакты</a></li>
+			        </ul>
+				</nav>
+			</header>
+			<div class="content">
+				<div class="description">
+					<h1>Что такое Интернет-магазин и какой принцып его работы?</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod culpa odit odio tempora ut assumenda nesciunt, neque rerum quibusdam sed commodi, atque doloribus laudantium alias? Sint dignissimos cupiditate voluptatum atque voluptas inventore praesentium excepturi ipsum temporibus et quaerat aliquid officiis facere aperiam eum culpa in, provident est, impedit necessitatibus molestias! Aliquam, ea. Quisquam sequi facere veniam architecto blanditiis quo eaque numquam, vel praesentium odio aliquam, atque quaerat magnam veritatis delectus suscipit ipsa reprehenderit. Voluptate quos, odit voluptatem voluptatum aspernatur nostrum totam quod nemo nesciunt! Reiciendis distinctio id rerum accusamus voluptatum ipsa consequatur eos repellat, illo cumque tenetur sapiente officiis!</p>
+					<div class="last"></div>
+				</div>
+			</div>
+			<footer> 
+				<div id="social">
+						<a href="#"><img src="img/fb.png" alt="facebook"></a>
+						<a href="#"><img src="img/google-plus.png" alt="facebook"></a>
+						<a href="#"><img src="img/linkedin.png" alt="facebook"></a>
+						<a href="#"><img src="img/instagram.png" 
+						alt="facebook"></a>
+						<a href="#"><img src="img/twitter.png" alt="facebook"></a>
+						<a  href="#"><img class="last-img" src="img/vk.png" alt="facebook"></a>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+	</script>
+</body>
+</html>
